@@ -1164,8 +1164,9 @@ G2L["91"]["Visible"] = false;
 G2L["91"]["ZIndex"] = 3001;
 G2L["91"]["BorderSizePixel"] = 0;
 G2L["91"]["BackgroundColor3"] = Color3.fromRGB(22, 22, 22);
+G2L["91"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
 G2L["91"]["Size"] = UDim2.new(0, 411, 0, 275);
-G2L["91"]["Position"] = UDim2.new(0.39242, 0, 0.37236, 0);
+G2L["91"]["Position"] = UDim2.new(0.5, 0, 0.5, 0);
 G2L["91"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["91"]["Name"] = [[code]];
 
