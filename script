@@ -1573,13 +1573,21 @@ task.spawn(C_55);
 local function C_65()
 local script = G2L["65"];
 	local player = game.Players.LocalPlayer
-	local character = player.Character or player.CharacterAdded:Wait()
-	local humanoid = character:WaitForChild("Humanoid")
 	local textbox = script.Parent
+	local humanoid
+	local function onCharacter(character)
+		humanoid = character:WaitForChild("Humanoid")
+		if tonumber(textbox.Text) then
+			humanoid.WalkSpeed = tonumber(textbox.Text)
+		end
+	end
+	if player.Character then onCharacter(player.Character) end
+	player.CharacterAdded:Connect(onCharacter)
 	textbox.FocusLost:Connect(function()
 		if textbox.Text == "" then textbox.Text = "Number" end
-		if tonumber(textbox.Text) == nil then textbox.Text = "Number" return end
-		humanoid.WalkSpeed = tonumber(textbox.Text)
+		local num = tonumber(textbox.Text)
+		if num == nil then textbox.Text = "Number" return end
+		if humanoid then humanoid.WalkSpeed = num end
 	end)
 end;
 task.spawn(C_65);
@@ -1587,14 +1595,22 @@ task.spawn(C_65);
 local function C_71()
 local script = G2L["71"];
 	local player = game.Players.LocalPlayer
-	local character = player.Character or player.CharacterAdded:Wait()
-	local humanoid = character:WaitForChild("Humanoid")
 	local textbox = script.Parent
-	humanoid.UseJumpPower = true
+	local humanoid
+	local function onCharacter(character)
+		humanoid = character:WaitForChild("Humanoid")
+		humanoid.UseJumpPower = true
+		if tonumber(textbox.Text) then
+			humanoid.JumpPower = tonumber(textbox.Text)
+		end
+	end
+	if player.Character then onCharacter(player.Character) end
+	player.CharacterAdded:Connect(onCharacter)
 	textbox.FocusLost:Connect(function()
 		if textbox.Text == "" then textbox.Text = "Number" end
-		if tonumber(textbox.Text) == nil then textbox.Text = "Number" return end
-		humanoid.JumpPower = tonumber(textbox.Text)
+		local num = tonumber(textbox.Text)
+		if num == nil then textbox.Text = "Number" return end
+		if humanoid then humanoid.JumpPower = num end
 	end)
 end;
 task.spawn(C_71);
