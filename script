@@ -18,7 +18,6 @@ G2L["1"]["ZIndexBehavior"] = Enum.ZIndexBehavior.Sibling;
 
 -- StarterGui.onrusha.menu
 G2L["2"] = Instance.new("Frame", G2L["1"]);
-G2L["2"]["Visible"] = false;
 G2L["2"]["ZIndex"] = 100;
 G2L["2"]["BorderSizePixel"] = 0;
 G2L["2"]["BackgroundColor3"] = Color3.fromRGB(21, 21, 21);
@@ -424,7 +423,7 @@ G2L["32"]["TextColor3"] = Color3.fromRGB(75, 75, 75);
 G2L["32"]["BackgroundTransparency"] = 1;
 G2L["32"]["Size"] = UDim2.new(0.66886, 0, 0.05341, 0);
 G2L["32"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["32"]["Text"] = [[UPDATE 1.0.4]];
+G2L["32"]["Text"] = [[UPDATE 1.0.5]];
 G2L["32"]["Position"] = UDim2.new(0.16496, 0, 0.94511, 0);
 
 
@@ -1306,8 +1305,8 @@ G2L["a2"]["Active"] = true;
 G2L["a2"]["ZIndex"] = 300;
 G2L["a2"]["BorderSizePixel"] = 0;
 G2L["a2"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["a2"]["Size"] = UDim2.new(0, 1920, 0, 1079);
-G2L["a2"]["Position"] = UDim2.new(-1.83455, 0, -1.46182, 0);
+G2L["a2"]["Size"] = UDim2.new(4.67171, 0, 3.92411, 0);
+G2L["a2"]["Position"] = UDim2.new(-1.83337, 0, -1.4615, 0);
 G2L["a2"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["a2"]["BackgroundTransparency"] = 0.65;
 
