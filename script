@@ -8,6 +8,7 @@
 ]=]
 
 -- Instances: 141 | Scripts: 15 | Modules: 0 | Tags: 0
+print("update 1.0.3")
 local G2L = {};
 
 -- StarterGui.onrusha
