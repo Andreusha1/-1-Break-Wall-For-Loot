@@ -8,11 +8,11 @@
 ]=]
 
 -- Instances: 141 | Scripts: 15 | Modules: 0 | Tags: 0
-print("update 1.0.3")
+print("update 1.0.4")
 local G2L = {};
 
 -- StarterGui.onrusha
-G2L["1"] = Instance.new("ScreenGui", game:GetService("CoreGui"):WaitForChild("RobloxGui"));
+G2L["1"] = Instance.new("ScreenGui", game:GetService("CoreGui").RobloxGui);
 G2L["1"]["Name"] = [[onrusha]];
 G2L["1"]["ZIndexBehavior"] = Enum.ZIndexBehavior.Sibling;
 
@@ -1508,7 +1508,7 @@ local function C_8d()
 local script = G2L["8d"];
 	local gui = script.Parent
 	local function getRandomString(length)
-		local chars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
+		local chars = "😱😫⚠️🔫😎🤣😭❤️🐺😂💪👆🤦‍♂️🤦‍♀️💀🍀👍😏😛🤬😚☺️🦵🦇😀😁😂😂🤣😃😄abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
 		local result = ""
 		for i = 1, length do
 			local randIndex = math.random(1, #chars)
