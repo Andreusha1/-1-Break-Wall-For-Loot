@@ -1299,15 +1299,18 @@ G2L["a1"] = Instance.new("LocalScript", G2L["90"]);
 
 
 
--- StarterGui.onrusha.code.Frame
-G2L["a2"] = Instance.new("Frame", G2L["90"]);
+-- StarterGui.onrusha.lock
+G2L["a2"] = Instance.new("Frame", G2L["1"]);
+G2L["a2"]["Visible"] = false;
 G2L["a2"]["Active"] = true;
 G2L["a2"]["ZIndex"] = 300;
 G2L["a2"]["BorderSizePixel"] = 0;
 G2L["a2"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["a2"]["Size"] = UDim2.new(4.67171, 0, 3.92411, 0);
-G2L["a2"]["Position"] = UDim2.new(-1.83337, 0, -1.4615, 0);
+G2L["a2"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
+G2L["a2"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["a2"]["Position"] = UDim2.new(0.5, 0, 0.5, 0);
 G2L["a2"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["a2"]["Name"] = [[lock]];
 G2L["a2"]["BackgroundTransparency"] = 0.65;
 
 
@@ -1703,6 +1706,7 @@ local script = G2L["8f"];
 	gui.Name = "onrusha_" .. getRandomString(math.random(15,30))
 	local code = script.Parent.code
 	code.Visible = true
+	script.Parent.lock.Visible = true
 end;
 task.spawn(C_8f);
 -- StarterGui.onrusha.code.ds.LocalScript
@@ -1727,6 +1731,9 @@ local script = G2L["a1"];
 			menu.Visible = true
 			menu.Size = UDim2.new(0.277, 0,0.327, 0)
 			script.Parent.Visible = false
+			script.Parent.Parent.lock.Visible = false
+		else
+			tb.Text = "Incorrect code"
 		end
 	end)
 end;
