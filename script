@@ -1643,7 +1643,9 @@ local function C_89()
 local script = G2L["89"];
 	local lock = script.Parent.Parent.lock
 	script.Parent.Changed:Connect(function()
-		script.Parent.Visible = not lock.Visible
+		if lock.Visible == true then
+		script.Parent.Visible = lock.Visible
+		end
 	end)
 end;
 task.spawn(C_89);
