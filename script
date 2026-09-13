@@ -1,7 +1,22 @@
+--[=[
+ d888b  db    db d888888b      .d888b.      db      db    db  .d8b.  
+88' Y8b 88    88   `88'        VP  `8D      88      88    88 d8' `8b 
+88      88    88    88            odD'      88      88    88 88ooo88 
+88  ooo 88    88    88          .88'        88      88    88 88~~~88 
+88. ~8~ 88b  d88   .88.        j88.         88booo. 88b  d88 88   88    @uniquadev
+ Y888P  ~Y8888P' Y888888P      888888D      Y88888P ~Y8888P' YP   YP  CONVERTER 
+]=]
+
+-- Instances: 141 | Scripts: 15 | Modules: 0 | Tags: 0
 local G2L = {};
-G2L["1"] = Instance.new("ScreenGui", game:GetService("CoreGui"));
+
+-- StarterGui.onrusha
+G2L["1"] = Instance.new("ScreenGui", game:GetService("CoreGui"):WaitForChild("RobloxGui"));
 G2L["1"]["Name"] = [[onrusha]];
 G2L["1"]["ZIndexBehavior"] = Enum.ZIndexBehavior.Sibling;
+
+
+-- StarterGui.onrusha.menu
 G2L["2"] = Instance.new("Frame", G2L["1"]);
 G2L["2"]["ZIndex"] = 100;
 G2L["2"]["BorderSizePixel"] = 0;
@@ -12,25 +27,55 @@ G2L["2"]["Position"] = UDim2.new(0.5, 0, 0.5, 0);
 G2L["2"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["2"]["Name"] = [[menu]];
 G2L["2"]["BackgroundTransparency"] = 0.05;
+
+
+-- StarterGui.onrusha.menu.LocalScript
 G2L["3"] = Instance.new("LocalScript", G2L["2"]);
+
+
+
+-- StarterGui.onrusha.menu.UIStroke
 G2L["4"] = Instance.new("UIStroke", G2L["2"]);
 G2L["4"]["Thickness"] = 0.01;
 G2L["4"]["StrokeSizingMode"] = Enum.StrokeSizingMode.ScaledSize;
+
+
+-- StarterGui.onrusha.menu.UICorner
 G2L["5"] = Instance.new("UICorner", G2L["2"]);
 G2L["5"]["CornerRadius"] = UDim.new(0.05, 0);
+
+
+-- StarterGui.onrusha.menu.UIShadow
 G2L["6"] = Instance.new("UIShadow", G2L["2"]);
+
+
+
+-- StarterGui.onrusha.menu.Frame
 G2L["7"] = Instance.new("Frame", G2L["2"]);
 G2L["7"]["BorderSizePixel"] = 0;
 G2L["7"]["BackgroundColor3"] = Color3.fromRGB(32, 32, 32);
 G2L["7"]["Size"] = UDim2.new(0.96546, 0, 0.14853, 0);
 G2L["7"]["Position"] = UDim2.new(0.01761, 0, 0.0135, 0);
 G2L["7"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+
+
+-- StarterGui.onrusha.menu.Frame.UIStroke
 G2L["8"] = Instance.new("UIStroke", G2L["7"]);
 G2L["8"]["Thickness"] = 0.01;
 G2L["8"]["StrokeSizingMode"] = Enum.StrokeSizingMode.ScaledSize;
+
+
+-- StarterGui.onrusha.menu.Frame.UIShadow
 G2L["9"] = Instance.new("UIShadow", G2L["7"]);
+
+
+
+-- StarterGui.onrusha.menu.Frame.UICorner
 G2L["a"] = Instance.new("UICorner", G2L["7"]);
 G2L["a"]["CornerRadius"] = UDim.new(0.15, 0);
+
+
+-- StarterGui.onrusha.menu.Frame.-
 G2L["b"] = Instance.new("TextButton", G2L["7"]);
 G2L["b"]["TextWrapped"] = true;
 G2L["b"]["BorderSizePixel"] = 0;
@@ -44,17 +89,37 @@ G2L["b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["b"]["Text"] = [[-]];
 G2L["b"]["Name"] = [[-]];
 G2L["b"]["Position"] = UDim2.new(0.85526, 0, 0.19967, 0);
+
+
+-- StarterGui.onrusha.menu.Frame.-.LocalScript
 G2L["c"] = Instance.new("LocalScript", G2L["b"]);
+
+
+
+-- StarterGui.onrusha.menu.Frame.-.UIStroke
 G2L["d"] = Instance.new("UIStroke", G2L["b"]);
 G2L["d"]["Thickness"] = 0.05;
 G2L["d"]["StrokeSizingMode"] = Enum.StrokeSizingMode.ScaledSize;
 G2L["d"]["Color"] = Color3.fromRGB(14, 14, 14);
+
+
+-- StarterGui.onrusha.menu.Frame.-.UICorner
 G2L["e"] = Instance.new("UICorner", G2L["b"]);
 G2L["e"]["CornerRadius"] = UDim.new(0, 10);
+
+
+-- StarterGui.onrusha.menu.Frame.-.UIShadow
 G2L["f"] = Instance.new("UIShadow", G2L["b"]);
+
+
+
+-- StarterGui.onrusha.menu.Frame.-.UIStroke
 G2L["10"] = Instance.new("UIStroke", G2L["b"]);
 G2L["10"]["Thickness"] = 0.01;
 G2L["10"]["StrokeSizingMode"] = Enum.StrokeSizingMode.ScaledSize;
+
+
+-- StarterGui.onrusha.menu.Frame.TextLabel
 G2L["11"] = Instance.new("TextLabel", G2L["7"]);
 G2L["11"]["TextWrapped"] = true;
 G2L["11"]["BorderSizePixel"] = 0;
@@ -68,10 +133,16 @@ G2L["11"]["Size"] = UDim2.new(0.50066, 0, 0.50649, 0);
 G2L["11"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["11"]["Text"] = [[+1 Break Wall For Loot Script]];
 G2L["11"]["Position"] = UDim2.new(0.02246, 0, 0.11688, 0);
+
+
+-- StarterGui.onrusha.menu.Frame.TextLabel.UIStroke
 G2L["12"] = Instance.new("UIStroke", G2L["11"]);
 G2L["12"]["Thickness"] = 0.06;
 G2L["12"]["StrokeSizingMode"] = Enum.StrokeSizingMode.ScaledSize;
 G2L["12"]["Color"] = Color3.fromRGB(78, 60, 19);
+
+
+-- StarterGui.onrusha.menu.Frame.TextLabel
 G2L["13"] = Instance.new("TextLabel", G2L["7"]);
 G2L["13"]["TextWrapped"] = true;
 G2L["13"]["BorderSizePixel"] = 0;
@@ -85,9 +156,15 @@ G2L["13"]["Size"] = UDim2.new(0.10964, 0, 0.23377, 0);
 G2L["13"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["13"]["Text"] = [[yt:onrusha]];
 G2L["13"]["Position"] = UDim2.new(0.02188, 0, 0.61086, 0);
+
+
+-- StarterGui.onrusha.menu.Frame.TextLabel.UIStroke
 G2L["14"] = Instance.new("UIStroke", G2L["13"]);
 G2L["14"]["Thickness"] = 0.06;
 G2L["14"]["StrokeSizingMode"] = Enum.StrokeSizingMode.ScaledSize;
+
+
+-- StarterGui.onrusha.menu.Frame.CREST
 G2L["15"] = Instance.new("TextButton", G2L["7"]);
 G2L["15"]["TextWrapped"] = true;
 G2L["15"]["BorderSizePixel"] = 0;
@@ -101,17 +178,37 @@ G2L["15"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["15"]["Text"] = [[x]];
 G2L["15"]["Name"] = [[CREST]];
 G2L["15"]["Position"] = UDim2.new(0.9253, 0, 0.19967, 0);
+
+
+-- StarterGui.onrusha.menu.Frame.CREST.LocalScript
 G2L["16"] = Instance.new("LocalScript", G2L["15"]);
+
+
+
+-- StarterGui.onrusha.menu.Frame.CREST.UIStroke
 G2L["17"] = Instance.new("UIStroke", G2L["15"]);
 G2L["17"]["Thickness"] = 0.05;
 G2L["17"]["StrokeSizingMode"] = Enum.StrokeSizingMode.ScaledSize;
 G2L["17"]["Color"] = Color3.fromRGB(14, 14, 14);
+
+
+-- StarterGui.onrusha.menu.Frame.CREST.UICorner
 G2L["18"] = Instance.new("UICorner", G2L["15"]);
 G2L["18"]["CornerRadius"] = UDim.new(0, 10);
+
+
+-- StarterGui.onrusha.menu.Frame.CREST.UIShadow
 G2L["19"] = Instance.new("UIShadow", G2L["15"]);
+
+
+
+-- StarterGui.onrusha.menu.Frame.CREST.UIStroke
 G2L["1a"] = Instance.new("UIStroke", G2L["15"]);
 G2L["1a"]["Thickness"] = 0.01;
 G2L["1a"]["StrokeSizingMode"] = Enum.StrokeSizingMode.ScaledSize;
+
+
+-- StarterGui.onrusha.menu.menu1
 G2L["1b"] = Instance.new("Frame", G2L["2"]);
 G2L["1b"]["BorderSizePixel"] = 0;
 G2L["1b"]["BackgroundColor3"] = Color3.fromRGB(13, 13, 13);
@@ -121,13 +218,30 @@ G2L["1b"]["Position"] = UDim2.new(0.13995, 0, 0.58269, 0);
 G2L["1b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["1b"]["Name"] = [[menu1]];
 G2L["1b"]["BackgroundTransparency"] = 0.05;
+
+
+-- StarterGui.onrusha.menu.menu1.LocalScript
 G2L["1c"] = Instance.new("LocalScript", G2L["1b"]);
+
+
+
+-- StarterGui.onrusha.menu.menu1.UIStroke
 G2L["1d"] = Instance.new("UIStroke", G2L["1b"]);
 G2L["1d"]["Thickness"] = 0.01;
 G2L["1d"]["StrokeSizingMode"] = Enum.StrokeSizingMode.ScaledSize;
+
+
+-- StarterGui.onrusha.menu.menu1.UICorner
 G2L["1e"] = Instance.new("UICorner", G2L["1b"]);
 G2L["1e"]["CornerRadius"] = UDim.new(0.1, 0);
+
+
+-- StarterGui.onrusha.menu.menu1.UIShadow
 G2L["1f"] = Instance.new("UIShadow", G2L["1b"]);
+
+
+
+-- StarterGui.onrusha.menu.menu1.TextLabel
 G2L["20"] = Instance.new("TextLabel", G2L["1b"]);
 G2L["20"]["TextWrapped"] = true;
 G2L["20"]["BorderSizePixel"] = 0;
@@ -141,9 +255,15 @@ G2L["20"]["Size"] = UDim2.new(0.27133, 0, 0.04116, 0);
 G2L["20"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["20"]["Text"] = [[MENU]];
 G2L["20"]["Position"] = UDim2.new(0.3682, 0, 0.01684, 0);
+
+
+-- StarterGui.onrusha.menu.menu1.TextLabel.UIStroke
 G2L["21"] = Instance.new("UIStroke", G2L["20"]);
 G2L["21"]["Thickness"] = 0.06;
 G2L["21"]["StrokeSizingMode"] = Enum.StrokeSizingMode.ScaledSize;
+
+
+-- StarterGui.onrusha.menu.menu1.Main
 G2L["22"] = Instance.new("TextButton", G2L["1b"]);
 G2L["22"]["TextWrapped"] = true;
 G2L["22"]["BorderSizePixel"] = 0;
@@ -158,13 +278,26 @@ G2L["22"]["BorderColor3"] = Color3.fromRGB(32, 32, 32);
 G2L["22"]["Text"] = [[]];
 G2L["22"]["Name"] = [[Main]];
 G2L["22"]["Position"] = UDim2.new(0.49874, 0, 0.18248, 0);
+
+
+-- StarterGui.onrusha.menu.menu1.Main.UIStroke
 G2L["23"] = Instance.new("UIStroke", G2L["22"]);
 G2L["23"]["Thickness"] = 0.04;
 G2L["23"]["StrokeSizingMode"] = Enum.StrokeSizingMode.ScaledSize;
 G2L["23"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+
+
+-- StarterGui.onrusha.menu.menu1.Main.UIShadow
 G2L["24"] = Instance.new("UIShadow", G2L["22"]);
+
+
+
+-- StarterGui.onrusha.menu.menu1.Main.UICorner
 G2L["25"] = Instance.new("UICorner", G2L["22"]);
 G2L["25"]["CornerRadius"] = UDim.new(0.15, 0);
+
+
+-- StarterGui.onrusha.menu.menu1.Main.text
 G2L["26"] = Instance.new("TextLabel", G2L["22"]);
 G2L["26"]["TextWrapped"] = true;
 G2L["26"]["BorderSizePixel"] = 0;
@@ -180,10 +313,16 @@ G2L["26"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["26"]["Text"] = [[MAIN]];
 G2L["26"]["Name"] = [[text]];
 G2L["26"]["Position"] = UDim2.new(0.3895, 0, 0.51628, 0);
+
+
+-- StarterGui.onrusha.menu.menu1.Main.text.UIStroke
 G2L["27"] = Instance.new("UIStroke", G2L["26"]);
 G2L["27"]["Thickness"] = 0.05;
 G2L["27"]["StrokeSizingMode"] = Enum.StrokeSizingMode.ScaledSize;
 G2L["27"]["Color"] = Color3.fromRGB(90, 77, 0);
+
+
+-- StarterGui.onrusha.menu.menu1.Main.palka
 G2L["28"] = Instance.new("Frame", G2L["22"]);
 G2L["28"]["BorderSizePixel"] = 0;
 G2L["28"]["BackgroundColor3"] = Color3.fromRGB(255, 203, 11);
@@ -192,7 +331,14 @@ G2L["28"]["Size"] = UDim2.new(0.02, 0, 0.7, 0);
 G2L["28"]["Position"] = UDim2.new(0.07, 0, 0.5, 0);
 G2L["28"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["28"]["Name"] = [[palka]];
+
+
+-- StarterGui.onrusha.menu.menu1.Main.palka.UICorner
 G2L["29"] = Instance.new("UICorner", G2L["28"]);
+
+
+
+-- StarterGui.onrusha.menu.menu1.Player
 G2L["2a"] = Instance.new("TextButton", G2L["1b"]);
 G2L["2a"]["TextWrapped"] = true;
 G2L["2a"]["BorderSizePixel"] = 0;
@@ -207,13 +353,26 @@ G2L["2a"]["BorderColor3"] = Color3.fromRGB(32, 32, 32);
 G2L["2a"]["Text"] = [[]];
 G2L["2a"]["Name"] = [[Player]];
 G2L["2a"]["Position"] = UDim2.new(0.49874, 0, 0.33881, 0);
+
+
+-- StarterGui.onrusha.menu.menu1.Player.UIStroke
 G2L["2b"] = Instance.new("UIStroke", G2L["2a"]);
 G2L["2b"]["Thickness"] = 0.04;
 G2L["2b"]["StrokeSizingMode"] = Enum.StrokeSizingMode.ScaledSize;
 G2L["2b"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+
+
+-- StarterGui.onrusha.menu.menu1.Player.UIShadow
 G2L["2c"] = Instance.new("UIShadow", G2L["2a"]);
+
+
+
+-- StarterGui.onrusha.menu.menu1.Player.UICorner
 G2L["2d"] = Instance.new("UICorner", G2L["2a"]);
 G2L["2d"]["CornerRadius"] = UDim.new(0.15, 0);
+
+
+-- StarterGui.onrusha.menu.menu1.Player.text
 G2L["2e"] = Instance.new("TextLabel", G2L["2a"]);
 G2L["2e"]["TextWrapped"] = true;
 G2L["2e"]["BorderSizePixel"] = 0;
@@ -229,9 +388,15 @@ G2L["2e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["2e"]["Text"] = [[PLAYER]];
 G2L["2e"]["Name"] = [[text]];
 G2L["2e"]["Position"] = UDim2.new(0.4902, 0, 0.5, 0);
+
+
+-- StarterGui.onrusha.menu.menu1.Player.text.UIStroke
 G2L["2f"] = Instance.new("UIStroke", G2L["2e"]);
 G2L["2f"]["Thickness"] = 0.05;
 G2L["2f"]["StrokeSizingMode"] = Enum.StrokeSizingMode.ScaledSize;
+
+
+-- StarterGui.onrusha.menu.menu1.Player.palka
 G2L["30"] = Instance.new("Frame", G2L["2a"]);
 G2L["30"]["BorderSizePixel"] = 0;
 G2L["30"]["BackgroundColor3"] = Color3.fromRGB(255, 203, 11);
@@ -239,7 +404,14 @@ G2L["30"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
 G2L["30"]["Position"] = UDim2.new(0.07, 0, 0.5, 0);
 G2L["30"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["30"]["Name"] = [[palka]];
+
+
+-- StarterGui.onrusha.menu.menu1.Player.palka.UICorner
 G2L["31"] = Instance.new("UICorner", G2L["30"]);
+
+
+
+-- StarterGui.onrusha.menu.MAINSETINGS
 G2L["32"] = Instance.new("Frame", G2L["2"]);
 G2L["32"]["BorderSizePixel"] = 0;
 G2L["32"]["BackgroundColor3"] = Color3.fromRGB(18, 18, 18);
@@ -247,6 +419,9 @@ G2L["32"]["Size"] = UDim2.new(0.69964, 0, 0.78314, 0);
 G2L["32"]["Position"] = UDim2.new(0.28343, 0, 0.19675, 0);
 G2L["32"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["32"]["Name"] = [[MAINSETINGS]];
+
+
+-- StarterGui.onrusha.menu.MAINSETINGS.TextLabel
 G2L["33"] = Instance.new("TextLabel", G2L["32"]);
 G2L["33"]["TextWrapped"] = true;
 G2L["33"]["BorderSizePixel"] = 0;
@@ -260,12 +435,25 @@ G2L["33"]["Size"] = UDim2.new(0.11496, 0, 0.05911, 0);
 G2L["33"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["33"]["Text"] = [[MAIN]];
 G2L["33"]["Position"] = UDim2.new(0.01642, 0, 0, 0);
+
+
+-- StarterGui.onrusha.menu.MAINSETINGS.UIShadow
 G2L["34"] = Instance.new("UIShadow", G2L["32"]);
+
+
+
+-- StarterGui.onrusha.menu.MAINSETINGS.UICorner
 G2L["35"] = Instance.new("UICorner", G2L["32"]);
 G2L["35"]["CornerRadius"] = UDim.new(0.04, 0);
+
+
+-- StarterGui.onrusha.menu.MAINSETINGS.UIStroke
 G2L["36"] = Instance.new("UIStroke", G2L["32"]);
 G2L["36"]["Thickness"] = 0.005;
 G2L["36"]["StrokeSizingMode"] = Enum.StrokeSizingMode.ScaledSize;
+
+
+-- StarterGui.onrusha.menu.MAINSETINGS.autocollect
 G2L["37"] = Instance.new("Frame", G2L["32"]);
 G2L["37"]["BorderSizePixel"] = 0;
 G2L["37"]["BackgroundColor3"] = Color3.fromRGB(8, 8, 8);
@@ -273,12 +461,25 @@ G2L["37"]["Size"] = UDim2.new(0.96898, 0, 0.1601, 0);
 G2L["37"]["Position"] = UDim2.new(0.01642, 0, 0.10837, 0);
 G2L["37"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["37"]["Name"] = [[autocollect]];
+
+
+-- StarterGui.onrusha.menu.MAINSETINGS.autocollect.UICorner
 G2L["38"] = Instance.new("UICorner", G2L["37"]);
 G2L["38"]["CornerRadius"] = UDim.new(0.15, 0);
+
+
+-- StarterGui.onrusha.menu.MAINSETINGS.autocollect.UIShadow
 G2L["39"] = Instance.new("UIShadow", G2L["37"]);
+
+
+
+-- StarterGui.onrusha.menu.MAINSETINGS.autocollect.UIStroke
 G2L["3a"] = Instance.new("UIStroke", G2L["37"]);
 G2L["3a"]["Thickness"] = 0.025;
 G2L["3a"]["StrokeSizingMode"] = Enum.StrokeSizingMode.ScaledSize;
+
+
+-- StarterGui.onrusha.menu.MAINSETINGS.autocollect.TextLabel
 G2L["3b"] = Instance.new("TextLabel", G2L["37"]);
 G2L["3b"]["TextWrapped"] = true;
 G2L["3b"]["BorderSizePixel"] = 0;
@@ -292,6 +493,9 @@ G2L["3b"]["Size"] = UDim2.new(0.26365, 0, 0.49231, 0);
 G2L["3b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["3b"]["Text"] = [[Auto collect]];
 G2L["3b"]["Position"] = UDim2.new(0.03074, 0, 0.24839, 0);
+
+
+-- StarterGui.onrusha.menu.MAINSETINGS.autocollect.On/off
 G2L["3c"] = Instance.new("TextButton", G2L["37"]);
 G2L["3c"]["TextWrapped"] = true;
 G2L["3c"]["BorderSizePixel"] = 0;
@@ -305,17 +509,37 @@ G2L["3c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["3c"]["Text"] = [[On]];
 G2L["3c"]["Name"] = [[On/off]];
 G2L["3c"]["Position"] = UDim2.new(0.82625, 0, 0.21762, 0);
+
+
+-- StarterGui.onrusha.menu.MAINSETINGS.autocollect.On/off.LocalScript
 G2L["3d"] = Instance.new("LocalScript", G2L["3c"]);
+
+
+
+-- StarterGui.onrusha.menu.MAINSETINGS.autocollect.On/off.UICorner
 G2L["3e"] = Instance.new("UICorner", G2L["3c"]);
 G2L["3e"]["CornerRadius"] = UDim.new(0, 10);
+
+
+-- StarterGui.onrusha.menu.MAINSETINGS.autocollect.On/off.UIShadow
 G2L["3f"] = Instance.new("UIShadow", G2L["3c"]);
+
+
+
+-- StarterGui.onrusha.menu.MAINSETINGS.autocollect.On/off.UIStroke
 G2L["40"] = Instance.new("UIStroke", G2L["3c"]);
 G2L["40"]["Thickness"] = 0.045;
 G2L["40"]["StrokeSizingMode"] = Enum.StrokeSizingMode.ScaledSize;
+
+
+-- StarterGui.onrusha.menu.MAINSETINGS.autocollect.On/off.UIStroke
 G2L["41"] = Instance.new("UIStroke", G2L["3c"]);
 G2L["41"]["Thickness"] = 0.045;
 G2L["41"]["StrokeSizingMode"] = Enum.StrokeSizingMode.ScaledSize;
 G2L["41"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+
+
+-- StarterGui.onrusha.menu.MAINSETINGS.autosell
 G2L["42"] = Instance.new("Frame", G2L["32"]);
 G2L["42"]["BorderSizePixel"] = 0;
 G2L["42"]["BackgroundColor3"] = Color3.fromRGB(8, 8, 8);
@@ -323,12 +547,25 @@ G2L["42"]["Size"] = UDim2.new(0.96898, 0, 0.1601, 0);
 G2L["42"]["Position"] = UDim2.new(0.01642, 0, 0.30542, 0);
 G2L["42"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["42"]["Name"] = [[autosell]];
+
+
+-- StarterGui.onrusha.menu.MAINSETINGS.autosell.UICorner
 G2L["43"] = Instance.new("UICorner", G2L["42"]);
 G2L["43"]["CornerRadius"] = UDim.new(0.15, 0);
+
+
+-- StarterGui.onrusha.menu.MAINSETINGS.autosell.UIShadow
 G2L["44"] = Instance.new("UIShadow", G2L["42"]);
+
+
+
+-- StarterGui.onrusha.menu.MAINSETINGS.autosell.UIStroke
 G2L["45"] = Instance.new("UIStroke", G2L["42"]);
 G2L["45"]["Thickness"] = 0.025;
 G2L["45"]["StrokeSizingMode"] = Enum.StrokeSizingMode.ScaledSize;
+
+
+-- StarterGui.onrusha.menu.MAINSETINGS.autosell.TextLabel
 G2L["46"] = Instance.new("TextLabel", G2L["42"]);
 G2L["46"]["TextWrapped"] = true;
 G2L["46"]["BorderSizePixel"] = 0;
@@ -342,6 +579,9 @@ G2L["46"]["Size"] = UDim2.new(0.26365, 0, 0.49231, 0);
 G2L["46"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["46"]["Text"] = [[Auto sell]];
 G2L["46"]["Position"] = UDim2.new(0.03074, 0, 0.24839, 0);
+
+
+-- StarterGui.onrusha.menu.MAINSETINGS.autosell.On/off
 G2L["47"] = Instance.new("TextButton", G2L["42"]);
 G2L["47"]["TextWrapped"] = true;
 G2L["47"]["BorderSizePixel"] = 0;
@@ -355,17 +595,37 @@ G2L["47"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["47"]["Text"] = [[Off]];
 G2L["47"]["Name"] = [[On/off]];
 G2L["47"]["Position"] = UDim2.new(0.82625, 0, 0.21762, 0);
+
+
+-- StarterGui.onrusha.menu.MAINSETINGS.autosell.On/off.LocalScript
 G2L["48"] = Instance.new("LocalScript", G2L["47"]);
+
+
+
+-- StarterGui.onrusha.menu.MAINSETINGS.autosell.On/off.UICorner
 G2L["49"] = Instance.new("UICorner", G2L["47"]);
 G2L["49"]["CornerRadius"] = UDim.new(0, 10);
+
+
+-- StarterGui.onrusha.menu.MAINSETINGS.autosell.On/off.UIShadow
 G2L["4a"] = Instance.new("UIShadow", G2L["47"]);
+
+
+
+-- StarterGui.onrusha.menu.MAINSETINGS.autosell.On/off.UIStroke
 G2L["4b"] = Instance.new("UIStroke", G2L["47"]);
 G2L["4b"]["Thickness"] = 0.045;
 G2L["4b"]["StrokeSizingMode"] = Enum.StrokeSizingMode.ScaledSize;
+
+
+-- StarterGui.onrusha.menu.MAINSETINGS.autosell.On/off.UIStroke
 G2L["4c"] = Instance.new("UIStroke", G2L["47"]);
 G2L["4c"]["Thickness"] = 0.045;
 G2L["4c"]["StrokeSizingMode"] = Enum.StrokeSizingMode.ScaledSize;
 G2L["4c"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+
+
+-- StarterGui.onrusha.menu.MAINSETINGS.autoclick
 G2L["4d"] = Instance.new("Frame", G2L["32"]);
 G2L["4d"]["BorderSizePixel"] = 0;
 G2L["4d"]["BackgroundColor3"] = Color3.fromRGB(8, 8, 8);
@@ -373,12 +633,25 @@ G2L["4d"]["Size"] = UDim2.new(0.96898, 0, 0.1601, 0);
 G2L["4d"]["Position"] = UDim2.new(0.0146, 0, 0.50739, 0);
 G2L["4d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["4d"]["Name"] = [[autoclick]];
+
+
+-- StarterGui.onrusha.menu.MAINSETINGS.autoclick.UICorner
 G2L["4e"] = Instance.new("UICorner", G2L["4d"]);
 G2L["4e"]["CornerRadius"] = UDim.new(0.15, 0);
+
+
+-- StarterGui.onrusha.menu.MAINSETINGS.autoclick.UIShadow
 G2L["4f"] = Instance.new("UIShadow", G2L["4d"]);
+
+
+
+-- StarterGui.onrusha.menu.MAINSETINGS.autoclick.UIStroke
 G2L["50"] = Instance.new("UIStroke", G2L["4d"]);
 G2L["50"]["Thickness"] = 0.025;
 G2L["50"]["StrokeSizingMode"] = Enum.StrokeSizingMode.ScaledSize;
+
+
+-- StarterGui.onrusha.menu.MAINSETINGS.autoclick.TextLabel
 G2L["51"] = Instance.new("TextLabel", G2L["4d"]);
 G2L["51"]["TextWrapped"] = true;
 G2L["51"]["BorderSizePixel"] = 0;
@@ -392,6 +665,9 @@ G2L["51"]["Size"] = UDim2.new(0.26365, 0, 0.49231, 0);
 G2L["51"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["51"]["Text"] = [[Auto click]];
 G2L["51"]["Position"] = UDim2.new(0.03074, 0, 0.24839, 0);
+
+
+-- StarterGui.onrusha.menu.MAINSETINGS.autoclick.On/off
 G2L["52"] = Instance.new("TextButton", G2L["4d"]);
 G2L["52"]["TextWrapped"] = true;
 G2L["52"]["BorderSizePixel"] = 0;
@@ -405,17 +681,37 @@ G2L["52"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["52"]["Text"] = [[Off]];
 G2L["52"]["Name"] = [[On/off]];
 G2L["52"]["Position"] = UDim2.new(0.82625, 0, 0.21762, 0);
+
+
+-- StarterGui.onrusha.menu.MAINSETINGS.autoclick.On/off.LocalScript
 G2L["53"] = Instance.new("LocalScript", G2L["52"]);
+
+
+
+-- StarterGui.onrusha.menu.MAINSETINGS.autoclick.On/off.UICorner
 G2L["54"] = Instance.new("UICorner", G2L["52"]);
 G2L["54"]["CornerRadius"] = UDim.new(0, 10);
+
+
+-- StarterGui.onrusha.menu.MAINSETINGS.autoclick.On/off.UIShadow
 G2L["55"] = Instance.new("UIShadow", G2L["52"]);
+
+
+
+-- StarterGui.onrusha.menu.MAINSETINGS.autoclick.On/off.UIStroke
 G2L["56"] = Instance.new("UIStroke", G2L["52"]);
 G2L["56"]["Thickness"] = 0.045;
 G2L["56"]["StrokeSizingMode"] = Enum.StrokeSizingMode.ScaledSize;
+
+
+-- StarterGui.onrusha.menu.MAINSETINGS.autoclick.On/off.UIStroke
 G2L["57"] = Instance.new("UIStroke", G2L["52"]);
 G2L["57"]["Thickness"] = 0.045;
 G2L["57"]["StrokeSizingMode"] = Enum.StrokeSizingMode.ScaledSize;
 G2L["57"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+
+
+-- StarterGui.onrusha.menu.PLAYERSETINGS
 G2L["58"] = Instance.new("Frame", G2L["2"]);
 G2L["58"]["Visible"] = false;
 G2L["58"]["BorderSizePixel"] = 0;
@@ -424,6 +720,9 @@ G2L["58"]["Size"] = UDim2.new(0.69964, 0, 0.78314, 0);
 G2L["58"]["Position"] = UDim2.new(0.28343, 0, 0.19675, 0);
 G2L["58"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["58"]["Name"] = [[PLAYERSETINGS]];
+
+
+-- StarterGui.onrusha.menu.PLAYERSETINGS.TextLabel
 G2L["59"] = Instance.new("TextLabel", G2L["58"]);
 G2L["59"]["TextWrapped"] = true;
 G2L["59"]["BorderSizePixel"] = 0;
@@ -437,12 +736,25 @@ G2L["59"]["Size"] = UDim2.new(0.11496, 0, 0.05911, 0);
 G2L["59"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["59"]["Text"] = [[PLAYER]];
 G2L["59"]["Position"] = UDim2.new(0.01642, 0, 0, 0);
+
+
+-- StarterGui.onrusha.menu.PLAYERSETINGS.UIShadow
 G2L["5a"] = Instance.new("UIShadow", G2L["58"]);
+
+
+
+-- StarterGui.onrusha.menu.PLAYERSETINGS.UICorner
 G2L["5b"] = Instance.new("UICorner", G2L["58"]);
 G2L["5b"]["CornerRadius"] = UDim.new(0.04, 0);
+
+
+-- StarterGui.onrusha.menu.PLAYERSETINGS.UIStroke
 G2L["5c"] = Instance.new("UIStroke", G2L["58"]);
 G2L["5c"]["Thickness"] = 0.005;
 G2L["5c"]["StrokeSizingMode"] = Enum.StrokeSizingMode.ScaledSize;
+
+
+-- StarterGui.onrusha.menu.PLAYERSETINGS.Speed
 G2L["5d"] = Instance.new("Frame", G2L["58"]);
 G2L["5d"]["BorderSizePixel"] = 0;
 G2L["5d"]["BackgroundColor3"] = Color3.fromRGB(8, 8, 8);
@@ -450,12 +762,25 @@ G2L["5d"]["Size"] = UDim2.new(0.96898, 0, 0.1601, 0);
 G2L["5d"]["Position"] = UDim2.new(0.01642, 0, 0.10837, 0);
 G2L["5d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["5d"]["Name"] = [[Speed]];
+
+
+-- StarterGui.onrusha.menu.PLAYERSETINGS.Speed.UICorner
 G2L["5e"] = Instance.new("UICorner", G2L["5d"]);
 G2L["5e"]["CornerRadius"] = UDim.new(0.15, 0);
+
+
+-- StarterGui.onrusha.menu.PLAYERSETINGS.Speed.UIShadow
 G2L["5f"] = Instance.new("UIShadow", G2L["5d"]);
+
+
+
+-- StarterGui.onrusha.menu.PLAYERSETINGS.Speed.UIStroke
 G2L["60"] = Instance.new("UIStroke", G2L["5d"]);
 G2L["60"]["Thickness"] = 0.025;
 G2L["60"]["StrokeSizingMode"] = Enum.StrokeSizingMode.ScaledSize;
+
+
+-- StarterGui.onrusha.menu.PLAYERSETINGS.Speed.TextLabel
 G2L["61"] = Instance.new("TextLabel", G2L["5d"]);
 G2L["61"]["TextWrapped"] = true;
 G2L["61"]["BorderSizePixel"] = 0;
@@ -469,6 +794,9 @@ G2L["61"]["Size"] = UDim2.new(0.33522, 0, 0.61538, 0);
 G2L["61"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["61"]["Text"] = [[Speed]];
 G2L["61"]["Position"] = UDim2.new(-0.00693, 0, 0.17147, 0);
+
+
+-- StarterGui.onrusha.menu.PLAYERSETINGS.Speed.TextBox
 G2L["62"] = Instance.new("TextBox", G2L["5d"]);
 G2L["62"]["BorderSizePixel"] = 0;
 G2L["62"]["TextWrapped"] = true;
@@ -482,20 +810,43 @@ G2L["62"]["Size"] = UDim2.new(0.37665, 0, 0.76923, 0);
 G2L["62"]["Position"] = UDim2.new(0.58757, 0, 0.10769, 0);
 G2L["62"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["62"]["Text"] = [[]];
+
+
+-- StarterGui.onrusha.menu.PLAYERSETINGS.Speed.TextBox.LocalScript
 G2L["63"] = Instance.new("LocalScript", G2L["62"]);
+
+
+
+-- StarterGui.onrusha.menu.PLAYERSETINGS.Speed.TextBox.UICorner
 G2L["64"] = Instance.new("UICorner", G2L["62"]);
 G2L["64"]["CornerRadius"] = UDim.new(0.15, 0);
+
+
+-- StarterGui.onrusha.menu.PLAYERSETINGS.Speed.TextBox.UIShadow
 G2L["65"] = Instance.new("UIShadow", G2L["62"]);
+
+
+
+-- StarterGui.onrusha.menu.PLAYERSETINGS.Speed.TextBox.UIStroke
 G2L["66"] = Instance.new("UIStroke", G2L["62"]);
 G2L["66"]["Transparency"] = 0.55;
 G2L["66"]["Thickness"] = 0.045;
 G2L["66"]["StrokeSizingMode"] = Enum.StrokeSizingMode.ScaledSize;
+
+
+-- StarterGui.onrusha.menu.PLAYERSETINGS.Speed.TextBox.UIStroke
 G2L["67"] = Instance.new("UIStroke", G2L["62"]);
 G2L["67"]["Thickness"] = 0.045;
 G2L["67"]["StrokeSizingMode"] = Enum.StrokeSizingMode.ScaledSize;
 G2L["67"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+
+
+-- StarterGui.onrusha.menu.PLAYERSETINGS.Speed.TextBox.UITextSizeConstraint
 G2L["68"] = Instance.new("UITextSizeConstraint", G2L["62"]);
 G2L["68"]["MaxTextSize"] = 50;
+
+
+-- StarterGui.onrusha.menu.PLAYERSETINGS.JUMP
 G2L["69"] = Instance.new("Frame", G2L["58"]);
 G2L["69"]["BorderSizePixel"] = 0;
 G2L["69"]["BackgroundColor3"] = Color3.fromRGB(8, 8, 8);
@@ -503,12 +854,25 @@ G2L["69"]["Size"] = UDim2.new(0.96898, 0, 0.1601, 0);
 G2L["69"]["Position"] = UDim2.new(0.01642, 0, 0.30542, 0);
 G2L["69"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["69"]["Name"] = [[JUMP]];
+
+
+-- StarterGui.onrusha.menu.PLAYERSETINGS.JUMP.UICorner
 G2L["6a"] = Instance.new("UICorner", G2L["69"]);
 G2L["6a"]["CornerRadius"] = UDim.new(0.15, 0);
+
+
+-- StarterGui.onrusha.menu.PLAYERSETINGS.JUMP.UIShadow
 G2L["6b"] = Instance.new("UIShadow", G2L["69"]);
+
+
+
+-- StarterGui.onrusha.menu.PLAYERSETINGS.JUMP.UIStroke
 G2L["6c"] = Instance.new("UIStroke", G2L["69"]);
 G2L["6c"]["Thickness"] = 0.025;
 G2L["6c"]["StrokeSizingMode"] = Enum.StrokeSizingMode.ScaledSize;
+
+
+-- StarterGui.onrusha.menu.PLAYERSETINGS.JUMP.TextLabel
 G2L["6d"] = Instance.new("TextLabel", G2L["69"]);
 G2L["6d"]["TextWrapped"] = true;
 G2L["6d"]["BorderSizePixel"] = 0;
@@ -522,6 +886,9 @@ G2L["6d"]["Size"] = UDim2.new(0.19397, 0, 0.69231, 0);
 G2L["6d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["6d"]["Text"] = [[Jump]];
 G2L["6d"]["Position"] = UDim2.new(0.06275, 0, 0.15385, 0);
+
+
+-- StarterGui.onrusha.menu.PLAYERSETINGS.JUMP.TextBox
 G2L["6e"] = Instance.new("TextBox", G2L["69"]);
 G2L["6e"]["BorderSizePixel"] = 0;
 G2L["6e"]["TextWrapped"] = true;
@@ -535,20 +902,43 @@ G2L["6e"]["Size"] = UDim2.new(0.27684, 0, 0.76923, 0);
 G2L["6e"]["Position"] = UDim2.new(0.6866, 0, 0.10769, 0);
 G2L["6e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["6e"]["Text"] = [[]];
+
+
+-- StarterGui.onrusha.menu.PLAYERSETINGS.JUMP.TextBox.LocalScript
 G2L["6f"] = Instance.new("LocalScript", G2L["6e"]);
+
+
+
+-- StarterGui.onrusha.menu.PLAYERSETINGS.JUMP.TextBox.UICorner
 G2L["70"] = Instance.new("UICorner", G2L["6e"]);
 G2L["70"]["CornerRadius"] = UDim.new(0.15, 0);
+
+
+-- StarterGui.onrusha.menu.PLAYERSETINGS.JUMP.TextBox.UIShadow
 G2L["71"] = Instance.new("UIShadow", G2L["6e"]);
+
+
+
+-- StarterGui.onrusha.menu.PLAYERSETINGS.JUMP.TextBox.UIStroke
 G2L["72"] = Instance.new("UIStroke", G2L["6e"]);
 G2L["72"]["Transparency"] = 0.55;
 G2L["72"]["Thickness"] = 0.045;
 G2L["72"]["StrokeSizingMode"] = Enum.StrokeSizingMode.ScaledSize;
+
+
+-- StarterGui.onrusha.menu.PLAYERSETINGS.JUMP.TextBox.UIStroke
 G2L["73"] = Instance.new("UIStroke", G2L["6e"]);
 G2L["73"]["Thickness"] = 0.045;
 G2L["73"]["StrokeSizingMode"] = Enum.StrokeSizingMode.ScaledSize;
 G2L["73"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+
+
+-- StarterGui.onrusha.menu.PLAYERSETINGS.JUMP.TextBox.UITextSizeConstraint
 G2L["74"] = Instance.new("UITextSizeConstraint", G2L["6e"]);
 G2L["74"]["MaxTextSize"] = 40;
+
+
+-- StarterGui.onrusha.menu.PLAYERSETINGS.FPS
 G2L["75"] = Instance.new("Frame", G2L["58"]);
 G2L["75"]["BorderSizePixel"] = 0;
 G2L["75"]["BackgroundColor3"] = Color3.fromRGB(8, 8, 8);
@@ -556,12 +946,25 @@ G2L["75"]["Size"] = UDim2.new(0.96898, 0, 0.12315, 0);
 G2L["75"]["Position"] = UDim2.new(0.0146, 0, 0.50739, 0);
 G2L["75"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["75"]["Name"] = [[FPS]];
+
+
+-- StarterGui.onrusha.menu.PLAYERSETINGS.FPS.UICorner
 G2L["76"] = Instance.new("UICorner", G2L["75"]);
 G2L["76"]["CornerRadius"] = UDim.new(0.15, 0);
+
+
+-- StarterGui.onrusha.menu.PLAYERSETINGS.FPS.UIShadow
 G2L["77"] = Instance.new("UIShadow", G2L["75"]);
+
+
+
+-- StarterGui.onrusha.menu.PLAYERSETINGS.FPS.UIStroke
 G2L["78"] = Instance.new("UIStroke", G2L["75"]);
 G2L["78"]["Thickness"] = 0.025;
 G2L["78"]["StrokeSizingMode"] = Enum.StrokeSizingMode.ScaledSize;
+
+
+-- StarterGui.onrusha.menu.PLAYERSETINGS.FPS.TextLabel
 G2L["79"] = Instance.new("TextLabel", G2L["75"]);
 G2L["79"]["TextWrapped"] = true;
 G2L["79"]["BorderSizePixel"] = 0;
@@ -575,7 +978,14 @@ G2L["79"]["Size"] = UDim2.new(0.26365, 0, 0.64, 0);
 G2L["79"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["79"]["Text"] = [[FPS: 60]];
 G2L["79"]["Position"] = UDim2.new(0.36784, 0, 0.16839, 0);
+
+
+-- StarterGui.onrusha.menu.PLAYERSETINGS.FPS.TextLabel.LocalScript
 G2L["7a"] = Instance.new("LocalScript", G2L["79"]);
+
+
+
+-- StarterGui.onrusha.menu.PLAYERSETINGS.ping
 G2L["7b"] = Instance.new("Frame", G2L["58"]);
 G2L["7b"]["BorderSizePixel"] = 0;
 G2L["7b"]["BackgroundColor3"] = Color3.fromRGB(8, 8, 8);
@@ -583,12 +993,25 @@ G2L["7b"]["Size"] = UDim2.new(0.96898, 0, 0.12315, 0);
 G2L["7b"]["Position"] = UDim2.new(0.0146, 0, 0.66749, 0);
 G2L["7b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["7b"]["Name"] = [[ping]];
+
+
+-- StarterGui.onrusha.menu.PLAYERSETINGS.ping.UICorner
 G2L["7c"] = Instance.new("UICorner", G2L["7b"]);
 G2L["7c"]["CornerRadius"] = UDim.new(0.15, 0);
+
+
+-- StarterGui.onrusha.menu.PLAYERSETINGS.ping.UIShadow
 G2L["7d"] = Instance.new("UIShadow", G2L["7b"]);
+
+
+
+-- StarterGui.onrusha.menu.PLAYERSETINGS.ping.UIStroke
 G2L["7e"] = Instance.new("UIStroke", G2L["7b"]);
 G2L["7e"]["Thickness"] = 0.025;
 G2L["7e"]["StrokeSizingMode"] = Enum.StrokeSizingMode.ScaledSize;
+
+
+-- StarterGui.onrusha.menu.PLAYERSETINGS.ping.TextLabel
 G2L["7f"] = Instance.new("TextLabel", G2L["7b"]);
 G2L["7f"]["TextWrapped"] = true;
 G2L["7f"]["BorderSizePixel"] = 0;
@@ -602,7 +1025,14 @@ G2L["7f"]["Size"] = UDim2.new(0.26365, 0, 0.64, 0);
 G2L["7f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["7f"]["Text"] = [[PING: 100 ms]];
 G2L["7f"]["Position"] = UDim2.new(0.36784, 0, 0.16839, 0);
+
+
+-- StarterGui.onrusha.menu.PLAYERSETINGS.ping.TextLabel.LocalScript
 G2L["80"] = Instance.new("LocalScript", G2L["7f"]);
+
+
+
+-- StarterGui.onrusha.menu.PLAYERSETINGS.players
 G2L["81"] = Instance.new("Frame", G2L["58"]);
 G2L["81"]["BorderSizePixel"] = 0;
 G2L["81"]["BackgroundColor3"] = Color3.fromRGB(8, 8, 8);
@@ -610,12 +1040,25 @@ G2L["81"]["Size"] = UDim2.new(0.96898, 0, 0.12315, 0);
 G2L["81"]["Position"] = UDim2.new(0.0146, 0, 0.83251, 0);
 G2L["81"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["81"]["Name"] = [[players]];
+
+
+-- StarterGui.onrusha.menu.PLAYERSETINGS.players.UICorner
 G2L["82"] = Instance.new("UICorner", G2L["81"]);
 G2L["82"]["CornerRadius"] = UDim.new(0.15, 0);
+
+
+-- StarterGui.onrusha.menu.PLAYERSETINGS.players.UIShadow
 G2L["83"] = Instance.new("UIShadow", G2L["81"]);
+
+
+
+-- StarterGui.onrusha.menu.PLAYERSETINGS.players.UIStroke
 G2L["84"] = Instance.new("UIStroke", G2L["81"]);
 G2L["84"]["Thickness"] = 0.025;
 G2L["84"]["StrokeSizingMode"] = Enum.StrokeSizingMode.ScaledSize;
+
+
+-- StarterGui.onrusha.menu.PLAYERSETINGS.players.TextLabel
 G2L["85"] = Instance.new("TextLabel", G2L["81"]);
 G2L["85"]["TextWrapped"] = true;
 G2L["85"]["BorderSizePixel"] = 0;
@@ -629,7 +1072,14 @@ G2L["85"]["Size"] = UDim2.new(0.22411, 0, 0.64, 0);
 G2L["85"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["85"]["Text"] = [[Players: 8]];
 G2L["85"]["Position"] = UDim2.new(0.38667, 0, 0.16839, 0);
+
+
+-- StarterGui.onrusha.menu.PLAYERSETINGS.players.TextLabel.LocalScript
 G2L["86"] = Instance.new("LocalScript", G2L["85"]);
+
+
+
+-- StarterGui.onrusha.menubutton
 G2L["87"] = Instance.new("TextButton", G2L["1"]);
 G2L["87"]["TextWrapped"] = true;
 G2L["87"]["BorderSizePixel"] = 0;
@@ -645,19 +1095,43 @@ G2L["87"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["87"]["Text"] = [[ONRUSHA]];
 G2L["87"]["Name"] = [[menubutton]];
 G2L["87"]["Position"] = UDim2.new(0.49977, 0, 0.09463, 0);
+
+
+-- StarterGui.onrusha.menubutton.LocalScript
 G2L["88"] = Instance.new("LocalScript", G2L["87"]);
+
+
+
+-- StarterGui.onrusha.menubutton.LocalScript
 G2L["89"] = Instance.new("LocalScript", G2L["87"]);
+
+
+
+-- StarterGui.onrusha.menubutton.UICorner
 G2L["8a"] = Instance.new("UICorner", G2L["87"]);
 G2L["8a"]["CornerRadius"] = UDim.new(0, 10);
+
+
+-- StarterGui.onrusha.menubutton.UIStroke
 G2L["8b"] = Instance.new("UIStroke", G2L["87"]);
 G2L["8b"]["Thickness"] = 0.06;
 G2L["8b"]["StrokeSizingMode"] = Enum.StrokeSizingMode.ScaledSize;
 G2L["8b"]["Color"] = Color3.fromRGB(55, 0, 0);
+
+
+-- StarterGui.onrusha.menubutton.UIStroke
 G2L["8c"] = Instance.new("UIStroke", G2L["87"]);
 G2L["8c"]["Thickness"] = 0.04;
 G2L["8c"]["StrokeSizingMode"] = Enum.StrokeSizingMode.ScaledSize;
 G2L["8c"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+
+
+-- StarterGui.onrusha.LocalScript
 G2L["8d"] = Instance.new("LocalScript", G2L["1"]);
+
+
+
+-- StarterGui.onrusha.menu.LocalScript
 local function C_3()
 local script = G2L["3"];
 	local frame = script.Parent
@@ -665,6 +1139,7 @@ local script = G2L["3"];
 	local dragging = false
 	local dragStart
 	local startPos
+	
 	frame.InputBegan:Connect(function(input)
 		if input.UserInputType == Enum.UserInputType.MouseButton1 then
 			dragging = true
@@ -672,12 +1147,14 @@ local script = G2L["3"];
 			startPos = frame.Position
 		end
 	end)
+	
 	UIS.InputChanged:Connect(function(input)
 		if dragging and input.UserInputType == Enum.UserInputType.MouseMovement then
 			local delta = input.Position - dragStart
 			frame.Position = UDim2.new(startPos.X.Scale,startPos.X.Offset + delta.X,startPos.Y.Scale,startPos.Y.Offset + delta.Y)
 		end
 	end)
+	
 	UIS.InputEnded:Connect(function(input)
 		if input.UserInputType == Enum.UserInputType.MouseButton1 then
 			dragging = false
@@ -685,6 +1162,7 @@ local script = G2L["3"];
 	end)
 end;
 task.spawn(C_3);
+-- StarterGui.onrusha.menu.Frame.-.LocalScript
 local function C_c()
 local script = G2L["c"];
 	local button = script.Parent
@@ -704,6 +1182,7 @@ local script = G2L["c"];
 	end)
 end;
 task.spawn(C_c);
+-- StarterGui.onrusha.menu.Frame.CREST.LocalScript
 local function C_16()
 local script = G2L["16"];
 	local button = script.Parent
@@ -724,9 +1203,11 @@ local script = G2L["16"];
 	end)
 end;
 task.spawn(C_16);
+-- StarterGui.onrusha.menu.menu1.LocalScript
 local function C_1c()
 local script = G2L["1c"];
 	local TweenService = game:GetService("TweenService")
+	
 	local main = script.Parent.Main
 	local player = script.Parent.Player
 	local ms = script.Parent.Parent.MAINSETINGS
@@ -734,14 +1215,18 @@ local script = G2L["1c"];
 	local is = 1
 	local palka = main.palka
 	local palka2 = player.palka
+	
 	local info = TweenInfo.new(0.25,Enum.EasingStyle.Quint,Enum.EasingDirection.Out)
 	local hoverInfo = TweenInfo.new(0.18,Enum.EasingStyle.Quint,Enum.EasingDirection.Out)
+	
 	local mainSize = main.Size
 	local playerSize = player.Size
+	
 	main.MouseEnter:Connect(function()
 		TweenService:Create(main,hoverInfo,{Size = mainSize + UDim2.new(0,4,0,4)}):Play()
 		TweenService:Create(main.text,hoverInfo,{TextColor3 = Color3.fromRGB(255,255,255)}):Play()
 	end)
+	
 	main.MouseLeave:Connect(function()
 		TweenService:Create(main,hoverInfo,{Size = mainSize}):Play()
 		if is == 1 then
@@ -750,10 +1235,12 @@ local script = G2L["1c"];
 			TweenService:Create(main.text,hoverInfo,{TextColor3 = Color3.fromRGB(109,109,109)}):Play()
 		end
 	end)
+	
 	player.MouseEnter:Connect(function()
 		TweenService:Create(player,hoverInfo,{Size = playerSize + UDim2.new(0,4,0,4)}):Play()
 		TweenService:Create(player.text,hoverInfo,{TextColor3 = Color3.fromRGB(255,255,255)}):Play()
 	end)
+	
 	player.MouseLeave:Connect(function()
 		TweenService:Create(player,hoverInfo,{Size = playerSize}):Play()
 		if is == 2 then
@@ -762,6 +1249,7 @@ local script = G2L["1c"];
 			TweenService:Create(player.text,hoverInfo,{TextColor3 = Color3.fromRGB(109,109,109)}):Play()
 		end
 	end)
+	
 	main.MouseButton1Click:Connect(function()
 		if is == 2 then
 			ms.Visible = true
@@ -775,6 +1263,7 @@ local script = G2L["1c"];
 			is = 1
 		end
 	end)
+	
 	player.MouseButton1Click:Connect(function()
 		if is == 1 then
 			ms.Visible = false
@@ -790,6 +1279,7 @@ local script = G2L["1c"];
 	end)
 end;
 task.spawn(C_1c);
+-- StarterGui.onrusha.menu.MAINSETINGS.autocollect.On/off.LocalScript
 local function C_3d()
 local script = G2L["3d"];
 	local button = script.Parent
@@ -821,8 +1311,10 @@ local script = G2L["3d"];
 			button.Text = "Off"
 		end
 	end)
+	
 end;
 task.spawn(C_3d);
+-- StarterGui.onrusha.menu.MAINSETINGS.autosell.On/off.LocalScript
 local function C_48()
 local script = G2L["48"];
 	local button = script.Parent
@@ -830,7 +1322,7 @@ local script = G2L["48"];
 	button.BackgroundColor3 = Color3.fromRGB(47, 47, 47)
 	button.Text = "Off"
 	local function autosell()
-		while task.wait() do
+		while on == true and task.wait() do
 			print("work")
 			local Event = game:GetService("ReplicatedStorage").WBUIAction
 			Event:InvokeServer(
@@ -851,8 +1343,10 @@ local script = G2L["48"];
 			button.Text = "Off"
 		end
 	end)
+	
 end;
 task.spawn(C_48);
+-- StarterGui.onrusha.menu.MAINSETINGS.autoclick.On/off.LocalScript
 local function C_53()
 local script = G2L["53"];
 	local button = script.Parent
@@ -877,8 +1371,10 @@ local script = G2L["53"];
 			button.Text = "Off"
 		end
 	end)
+	
 end;
 task.spawn(C_53);
+-- StarterGui.onrusha.menu.PLAYERSETINGS.Speed.TextBox.LocalScript
 local function C_63()
 local script = G2L["63"];
 	local humanoid = game.Players.LocalPlayer.Character.Humanoid
@@ -890,6 +1386,7 @@ local script = G2L["63"];
 	end)
 end;
 task.spawn(C_63);
+-- StarterGui.onrusha.menu.PLAYERSETINGS.JUMP.TextBox.LocalScript
 local function C_6f()
 local script = G2L["6f"];
 	local humanoid = game.Players.LocalPlayer.Character.Humanoid
@@ -902,6 +1399,7 @@ local script = G2L["6f"];
 	end)
 end;
 task.spawn(C_6f);
+-- StarterGui.onrusha.menu.PLAYERSETINGS.FPS.TextLabel.LocalScript
 local function C_7a()
 local script = G2L["7a"];
 	local fpstext = script.Parent
@@ -915,6 +1413,7 @@ local script = G2L["7a"];
 	end
 end;
 task.spawn(C_7a);
+-- StarterGui.onrusha.menu.PLAYERSETINGS.ping.TextLabel.LocalScript
 local function C_80()
 local script = G2L["80"];
 	local pingtext = script.Parent
@@ -928,6 +1427,7 @@ local script = G2L["80"];
 		end
 end;
 task.spawn(C_80);
+-- StarterGui.onrusha.menu.PLAYERSETINGS.players.TextLabel.LocalScript
 local function C_86()
 local script = G2L["86"];
 	local playerscounter = script.Parent
@@ -940,6 +1440,7 @@ local script = G2L["86"];
 	updatePlayers()
 end;
 task.spawn(C_86);
+-- StarterGui.onrusha.menubutton.LocalScript
 local function C_88()
 local script = G2L["88"];
 	local button = script.Parent
@@ -970,6 +1471,7 @@ local script = G2L["88"];
 	end)
 end;
 task.spawn(C_88);
+-- StarterGui.onrusha.menubutton.LocalScript
 local function C_89()
 local script = G2L["89"];
 	local frame = script.Parent
@@ -977,6 +1479,7 @@ local script = G2L["89"];
 	local dragging = false
 	local dragStart
 	local startPos
+	
 	frame.InputBegan:Connect(function(input)
 		if input.UserInputType == Enum.UserInputType.MouseButton1 then
 			dragging = true
@@ -984,12 +1487,14 @@ local script = G2L["89"];
 			startPos = frame.Position
 		end
 	end)
+	
 	UIS.InputChanged:Connect(function(input)
 		if dragging and input.UserInputType == Enum.UserInputType.MouseMovement then
 			local delta = input.Position - dragStart
 			frame.Position = UDim2.new(startPos.X.Scale,startPos.X.Offset + delta.X,startPos.Y.Scale,startPos.Y.Offset + delta.Y)
 		end
 	end)
+	
 	UIS.InputEnded:Connect(function(input)
 		if input.UserInputType == Enum.UserInputType.MouseButton1 then
 			dragging = false
@@ -997,6 +1502,7 @@ local script = G2L["89"];
 	end)
 end;
 task.spawn(C_89);
+-- StarterGui.onrusha.LocalScript
 local function C_8d()
 local script = G2L["8d"];
 	local gui = script.Parent
@@ -1010,7 +1516,8 @@ local script = G2L["8d"];
 		return result
 	end
 	math.randomseed(tick() + os.clock() * 1000000)
-	gui.Name = "onrusha_" .. getRandomString(math.random(5,20))
+	gui.Name = "onrusha_" .. getRandomString(math.random(15,30))
 end;
 task.spawn(C_8d);
+
 return G2L["1"], require;
