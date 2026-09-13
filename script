@@ -7,7 +7,7 @@
  Y888P  ~Y8888P' Y888888P      888888D      Y88888P ~Y8888P' YP   YP  CONVERTER 
 ]=]
 
--- Instances: 163 | Scripts: 17 | Modules: 0 | Tags: 0
+-- Instances: 164 | Scripts: 18 | Modules: 0 | Tags: 0
 local G2L = {};
 
 -- StarterGui.onrusha
@@ -423,7 +423,7 @@ G2L["32"]["TextColor3"] = Color3.fromRGB(75, 75, 75);
 G2L["32"]["BackgroundTransparency"] = 1;
 G2L["32"]["Size"] = UDim2.new(0.66886, 0, 0.05341, 0);
 G2L["32"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["32"]["Text"] = [[UPDATE 1.0.5]];
+G2L["32"]["Text"] = [[UPDATE 1.0.6]];
 G2L["32"]["Position"] = UDim2.new(0.16496, 0, 0.94511, 0);
 
 
@@ -1101,222 +1101,228 @@ G2L["88"] = Instance.new("LocalScript", G2L["87"]);
 
 
 
+-- StarterGui.onrusha.menu.LocalScript
+G2L["89"] = Instance.new("LocalScript", G2L["2"]);
+
+
+
 -- StarterGui.onrusha.menubutton
-G2L["89"] = Instance.new("TextButton", G2L["1"]);
-G2L["89"]["TextWrapped"] = true;
-G2L["89"]["BorderSizePixel"] = 0;
-G2L["89"]["TextSize"] = 14;
-G2L["89"]["TextScaled"] = true;
-G2L["89"]["TextColor3"] = Color3.fromRGB(255, 0, 0);
-G2L["89"]["BackgroundColor3"] = Color3.fromRGB(212, 149, 0);
-G2L["89"]["FontFace"] = Font.new([[rbxasset://fonts/families/LuckiestGuy.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["89"]["ZIndex"] = 100;
-G2L["89"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
-G2L["89"]["Size"] = UDim2.new(0.04173, 0, 0.07538, 0);
-G2L["89"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["89"]["Text"] = [[ONRUSHA]];
-G2L["89"]["Name"] = [[menubutton]];
-G2L["89"]["Position"] = UDim2.new(0.49977, 0, 0.09463, 0);
+G2L["8a"] = Instance.new("TextButton", G2L["1"]);
+G2L["8a"]["TextWrapped"] = true;
+G2L["8a"]["BorderSizePixel"] = 0;
+G2L["8a"]["TextSize"] = 14;
+G2L["8a"]["TextScaled"] = true;
+G2L["8a"]["TextColor3"] = Color3.fromRGB(255, 0, 0);
+G2L["8a"]["BackgroundColor3"] = Color3.fromRGB(212, 149, 0);
+G2L["8a"]["FontFace"] = Font.new([[rbxasset://fonts/families/LuckiestGuy.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["8a"]["ZIndex"] = 100;
+G2L["8a"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
+G2L["8a"]["Size"] = UDim2.new(0.04173, 0, 0.07538, 0);
+G2L["8a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["8a"]["Text"] = [[ONRUSHA]];
+G2L["8a"]["Name"] = [[menubutton]];
+G2L["8a"]["Position"] = UDim2.new(0.49977, 0, 0.09463, 0);
 
 
 -- StarterGui.onrusha.menubutton.LocalScript
-G2L["8a"] = Instance.new("LocalScript", G2L["89"]);
+G2L["8b"] = Instance.new("LocalScript", G2L["8a"]);
 
 
 
 -- StarterGui.onrusha.menubutton.LocalScript
-G2L["8b"] = Instance.new("LocalScript", G2L["89"]);
+G2L["8c"] = Instance.new("LocalScript", G2L["8a"]);
 
 
 
 -- StarterGui.onrusha.menubutton.UICorner
-G2L["8c"] = Instance.new("UICorner", G2L["89"]);
-G2L["8c"]["CornerRadius"] = UDim.new(0, 10);
+G2L["8d"] = Instance.new("UICorner", G2L["8a"]);
+G2L["8d"]["CornerRadius"] = UDim.new(0, 10);
 
 
 -- StarterGui.onrusha.menubutton.UIStroke
-G2L["8d"] = Instance.new("UIStroke", G2L["89"]);
-G2L["8d"]["Thickness"] = 0.06;
-G2L["8d"]["StrokeSizingMode"] = Enum.StrokeSizingMode.ScaledSize;
-G2L["8d"]["Color"] = Color3.fromRGB(55, 0, 0);
-
-
--- StarterGui.onrusha.menubutton.UIStroke
-G2L["8e"] = Instance.new("UIStroke", G2L["89"]);
-G2L["8e"]["Thickness"] = 0.04;
+G2L["8e"] = Instance.new("UIStroke", G2L["8a"]);
+G2L["8e"]["Thickness"] = 0.06;
 G2L["8e"]["StrokeSizingMode"] = Enum.StrokeSizingMode.ScaledSize;
-G2L["8e"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+G2L["8e"]["Color"] = Color3.fromRGB(55, 0, 0);
+
+
+-- StarterGui.onrusha.menubutton.UIStroke
+G2L["8f"] = Instance.new("UIStroke", G2L["8a"]);
+G2L["8f"]["Thickness"] = 0.04;
+G2L["8f"]["StrokeSizingMode"] = Enum.StrokeSizingMode.ScaledSize;
+G2L["8f"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
 
 
 -- StarterGui.onrusha.LocalScript
-G2L["8f"] = Instance.new("LocalScript", G2L["1"]);
+G2L["90"] = Instance.new("LocalScript", G2L["1"]);
 
 
 
 -- StarterGui.onrusha.code
-G2L["90"] = Instance.new("Frame", G2L["1"]);
-G2L["90"]["Visible"] = false;
-G2L["90"]["ZIndex"] = 3001;
-G2L["90"]["BorderSizePixel"] = 0;
-G2L["90"]["BackgroundColor3"] = Color3.fromRGB(22, 22, 22);
-G2L["90"]["Size"] = UDim2.new(0, 411, 0, 275);
-G2L["90"]["Position"] = UDim2.new(0.39242, 0, 0.37236, 0);
-G2L["90"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["90"]["Name"] = [[code]];
+G2L["91"] = Instance.new("Frame", G2L["1"]);
+G2L["91"]["Visible"] = false;
+G2L["91"]["ZIndex"] = 3001;
+G2L["91"]["BorderSizePixel"] = 0;
+G2L["91"]["BackgroundColor3"] = Color3.fromRGB(22, 22, 22);
+G2L["91"]["Size"] = UDim2.new(0, 411, 0, 275);
+G2L["91"]["Position"] = UDim2.new(0.39242, 0, 0.37236, 0);
+G2L["91"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["91"]["Name"] = [[code]];
 
 
 -- StarterGui.onrusha.code.UICorner
-G2L["91"] = Instance.new("UICorner", G2L["90"]);
-G2L["91"]["CornerRadius"] = UDim.new(0.05, 0);
+G2L["92"] = Instance.new("UICorner", G2L["91"]);
+G2L["92"]["CornerRadius"] = UDim.new(0.05, 0);
 
 
 -- StarterGui.onrusha.code.UIShadow
-G2L["92"] = Instance.new("UIShadow", G2L["90"]);
+G2L["93"] = Instance.new("UIShadow", G2L["91"]);
 
 
 
 -- StarterGui.onrusha.code.UIStroke
-G2L["93"] = Instance.new("UIStroke", G2L["90"]);
-G2L["93"]["Thickness"] = 0.01;
-G2L["93"]["StrokeSizingMode"] = Enum.StrokeSizingMode.ScaledSize;
+G2L["94"] = Instance.new("UIStroke", G2L["91"]);
+G2L["94"]["Thickness"] = 0.01;
+G2L["94"]["StrokeSizingMode"] = Enum.StrokeSizingMode.ScaledSize;
 
 
 -- StarterGui.onrusha.code.TextLabel
-G2L["94"] = Instance.new("TextLabel", G2L["90"]);
-G2L["94"]["TextWrapped"] = true;
-G2L["94"]["ZIndex"] = 400;
-G2L["94"]["BorderSizePixel"] = 0;
-G2L["94"]["TextSize"] = 14;
-G2L["94"]["TextScaled"] = true;
-G2L["94"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["94"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["94"]["TextColor3"] = Color3.fromRGB(255, 0, 0);
-G2L["94"]["BackgroundTransparency"] = 1;
-G2L["94"]["Size"] = UDim2.new(0.83912, 0, 0.25956, 0);
-G2L["94"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["94"]["Text"] = [[JOIN IN DISCORD SERVER TO USE SCRIPT AND WRITE KEY]];
-G2L["94"]["Position"] = UDim2.new(0.08227, 0, 0.01639, 0);
+G2L["95"] = Instance.new("TextLabel", G2L["91"]);
+G2L["95"]["TextWrapped"] = true;
+G2L["95"]["ZIndex"] = 400;
+G2L["95"]["BorderSizePixel"] = 0;
+G2L["95"]["TextSize"] = 14;
+G2L["95"]["TextScaled"] = true;
+G2L["95"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["95"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["95"]["TextColor3"] = Color3.fromRGB(255, 0, 0);
+G2L["95"]["BackgroundTransparency"] = 1;
+G2L["95"]["Size"] = UDim2.new(0.83912, 0, 0.25956, 0);
+G2L["95"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["95"]["Text"] = [[JOIN IN DISCORD SERVER TO USE SCRIPT AND WRITE KEY]];
+G2L["95"]["Position"] = UDim2.new(0.08227, 0, 0.01639, 0);
 
 
 -- StarterGui.onrusha.code.TextLabel.UIStroke
-G2L["95"] = Instance.new("UIStroke", G2L["94"]);
-G2L["95"]["Thickness"] = 0.05;
-G2L["95"]["StrokeSizingMode"] = Enum.StrokeSizingMode.ScaledSize;
+G2L["96"] = Instance.new("UIStroke", G2L["95"]);
+G2L["96"]["Thickness"] = 0.05;
+G2L["96"]["StrokeSizingMode"] = Enum.StrokeSizingMode.ScaledSize;
 
 
 -- StarterGui.onrusha.code.TextBox
-G2L["96"] = Instance.new("TextBox", G2L["90"]);
-G2L["96"]["CursorPosition"] = -1;
-G2L["96"]["PlaceholderColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["96"]["ZIndex"] = 400;
-G2L["96"]["BorderSizePixel"] = 0;
-G2L["96"]["TextWrapped"] = true;
-G2L["96"]["TextSize"] = 14;
-G2L["96"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["96"]["TextScaled"] = true;
-G2L["96"]["BackgroundColor3"] = Color3.fromRGB(255, 241, 124);
-G2L["96"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["96"]["Size"] = UDim2.new(0.50823, 0, 0.18852, 0);
-G2L["96"]["Position"] = UDim2.new(0.2468, 0, 0.39995, 0);
-G2L["96"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["96"]["Text"] = [[Enter Here]];
+G2L["97"] = Instance.new("TextBox", G2L["91"]);
+G2L["97"]["CursorPosition"] = -1;
+G2L["97"]["PlaceholderColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["97"]["ZIndex"] = 400;
+G2L["97"]["BorderSizePixel"] = 0;
+G2L["97"]["TextWrapped"] = true;
+G2L["97"]["TextSize"] = 14;
+G2L["97"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["97"]["TextScaled"] = true;
+G2L["97"]["BackgroundColor3"] = Color3.fromRGB(255, 241, 124);
+G2L["97"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["97"]["Size"] = UDim2.new(0.50823, 0, 0.18852, 0);
+G2L["97"]["Position"] = UDim2.new(0.2468, 0, 0.39995, 0);
+G2L["97"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["97"]["Text"] = [[Enter Here]];
 
 
 -- StarterGui.onrusha.code.TextBox.UIStroke
-G2L["97"] = Instance.new("UIStroke", G2L["96"]);
-G2L["97"]["Thickness"] = 0.05;
-G2L["97"]["StrokeSizingMode"] = Enum.StrokeSizingMode.ScaledSize;
-G2L["97"]["Color"] = Color3.fromRGB(108, 108, 108);
+G2L["98"] = Instance.new("UIStroke", G2L["97"]);
+G2L["98"]["Thickness"] = 0.05;
+G2L["98"]["StrokeSizingMode"] = Enum.StrokeSizingMode.ScaledSize;
+G2L["98"]["Color"] = Color3.fromRGB(108, 108, 108);
 
 
 -- StarterGui.onrusha.code.TextBox.UIShadow
-G2L["98"] = Instance.new("UIShadow", G2L["96"]);
+G2L["99"] = Instance.new("UIShadow", G2L["97"]);
 
 
 
 -- StarterGui.onrusha.code.TextBox.UICorner
-G2L["99"] = Instance.new("UICorner", G2L["96"]);
-G2L["99"]["CornerRadius"] = UDim.new(0.05, 0);
+G2L["9a"] = Instance.new("UICorner", G2L["97"]);
+G2L["9a"]["CornerRadius"] = UDim.new(0.05, 0);
 
 
 -- StarterGui.onrusha.code.TextBox.UIStroke
-G2L["9a"] = Instance.new("UIStroke", G2L["96"]);
-G2L["9a"]["Thickness"] = 0.04;
-G2L["9a"]["StrokeSizingMode"] = Enum.StrokeSizingMode.ScaledSize;
-G2L["9a"]["Color"] = Color3.fromRGB(142, 119, 0);
-G2L["9a"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+G2L["9b"] = Instance.new("UIStroke", G2L["97"]);
+G2L["9b"]["Thickness"] = 0.04;
+G2L["9b"]["StrokeSizingMode"] = Enum.StrokeSizingMode.ScaledSize;
+G2L["9b"]["Color"] = Color3.fromRGB(142, 119, 0);
+G2L["9b"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
 
 
 -- StarterGui.onrusha.code.ds
-G2L["9b"] = Instance.new("TextBox", G2L["90"]);
-G2L["9b"]["CursorPosition"] = -1;
-G2L["9b"]["Name"] = [[ds]];
-G2L["9b"]["PlaceholderColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["9b"]["ZIndex"] = 400;
-G2L["9b"]["BorderSizePixel"] = 0;
-G2L["9b"]["TextWrapped"] = true;
-G2L["9b"]["TextSize"] = 14;
-G2L["9b"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["9b"]["TextScaled"] = true;
-G2L["9b"]["BackgroundColor3"] = Color3.fromRGB(63, 63, 63);
-G2L["9b"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["9b"]["Size"] = UDim2.new(0.87751, 0, 0.12295, 0);
-G2L["9b"]["Position"] = UDim2.new(0.06216, 0, 0.79523, 0);
-G2L["9b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["9b"]["Text"] = [[https://discord.gg/NWyfNUzTF]];
+G2L["9c"] = Instance.new("TextBox", G2L["91"]);
+G2L["9c"]["CursorPosition"] = -1;
+G2L["9c"]["Name"] = [[ds]];
+G2L["9c"]["PlaceholderColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["9c"]["ZIndex"] = 400;
+G2L["9c"]["BorderSizePixel"] = 0;
+G2L["9c"]["TextWrapped"] = true;
+G2L["9c"]["TextSize"] = 14;
+G2L["9c"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["9c"]["TextScaled"] = true;
+G2L["9c"]["BackgroundColor3"] = Color3.fromRGB(63, 63, 63);
+G2L["9c"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["9c"]["Size"] = UDim2.new(0.87751, 0, 0.12295, 0);
+G2L["9c"]["Position"] = UDim2.new(0.06216, 0, 0.79523, 0);
+G2L["9c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["9c"]["Text"] = [[https://discord.gg/NWyfNUzTF]];
 
 
 -- StarterGui.onrusha.code.ds.UIStroke
-G2L["9c"] = Instance.new("UIStroke", G2L["9b"]);
-G2L["9c"]["Thickness"] = 0.03;
-G2L["9c"]["StrokeSizingMode"] = Enum.StrokeSizingMode.ScaledSize;
+G2L["9d"] = Instance.new("UIStroke", G2L["9c"]);
+G2L["9d"]["Thickness"] = 0.03;
+G2L["9d"]["StrokeSizingMode"] = Enum.StrokeSizingMode.ScaledSize;
 
 
 -- StarterGui.onrusha.code.ds.UIShadow
-G2L["9d"] = Instance.new("UIShadow", G2L["9b"]);
+G2L["9e"] = Instance.new("UIShadow", G2L["9c"]);
 
 
 
 -- StarterGui.onrusha.code.ds.UICorner
-G2L["9e"] = Instance.new("UICorner", G2L["9b"]);
-G2L["9e"]["CornerRadius"] = UDim.new(0.05, 0);
+G2L["9f"] = Instance.new("UICorner", G2L["9c"]);
+G2L["9f"]["CornerRadius"] = UDim.new(0.05, 0);
 
 
 -- StarterGui.onrusha.code.ds.UIStroke
-G2L["9f"] = Instance.new("UIStroke", G2L["9b"]);
-G2L["9f"]["Thickness"] = 0.06;
-G2L["9f"]["StrokeSizingMode"] = Enum.StrokeSizingMode.ScaledSize;
-G2L["9f"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+G2L["a0"] = Instance.new("UIStroke", G2L["9c"]);
+G2L["a0"]["Thickness"] = 0.06;
+G2L["a0"]["StrokeSizingMode"] = Enum.StrokeSizingMode.ScaledSize;
+G2L["a0"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
 
 
 -- StarterGui.onrusha.code.ds.LocalScript
-G2L["a0"] = Instance.new("LocalScript", G2L["9b"]);
+G2L["a1"] = Instance.new("LocalScript", G2L["9c"]);
 
 
 
 -- StarterGui.onrusha.code.LocalScript
-G2L["a1"] = Instance.new("LocalScript", G2L["90"]);
+G2L["a2"] = Instance.new("LocalScript", G2L["91"]);
 
 
 
 -- StarterGui.onrusha.lock
-G2L["a2"] = Instance.new("Frame", G2L["1"]);
-G2L["a2"]["Visible"] = false;
-G2L["a2"]["Active"] = true;
-G2L["a2"]["ZIndex"] = 300;
-G2L["a2"]["BorderSizePixel"] = 0;
-G2L["a2"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["a2"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
-G2L["a2"]["Size"] = UDim2.new(1, 0, 1, 0);
-G2L["a2"]["Position"] = UDim2.new(0.5, 0, 0.5, 0);
-G2L["a2"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["a2"]["Name"] = [[lock]];
-G2L["a2"]["BackgroundTransparency"] = 0.65;
+G2L["a3"] = Instance.new("Frame", G2L["1"]);
+G2L["a3"]["Visible"] = false;
+G2L["a3"]["Active"] = true;
+G2L["a3"]["ZIndex"] = 300;
+G2L["a3"]["BorderSizePixel"] = 0;
+G2L["a3"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["a3"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
+G2L["a3"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["a3"]["Position"] = UDim2.new(0.5, 0, 0.5, 0);
+G2L["a3"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["a3"]["Name"] = [[lock]];
+G2L["a3"]["BackgroundTransparency"] = 0.65;
 
 
 -- StarterGui.onrusha.lock.UIStroke
-G2L["a3"] = Instance.new("UIStroke", G2L["a2"]);
-G2L["a3"]["Thickness"] = 25;
+G2L["a4"] = Instance.new("UIStroke", G2L["a3"]);
+G2L["a4"]["Transparency"] = 0.65;
+G2L["a4"]["Thickness"] = 200;
 
 
 -- StarterGui.onrusha.menu.LocalScript
@@ -1632,9 +1638,18 @@ local script = G2L["88"];
 	updatePlayers()
 end;
 task.spawn(C_88);
+-- StarterGui.onrusha.menu.LocalScript
+local function C_89()
+local script = G2L["89"];
+	local lock = script.Parent.Parent.lock
+	script.Parent.Changed:Connect(function()
+		script.Parent.Visible = not lock.Visible
+	end)
+end;
+task.spawn(C_89);
 -- StarterGui.onrusha.menubutton.LocalScript
-local function C_8a()
-local script = G2L["8a"];
+local function C_8b()
+local script = G2L["8b"];
 	local button = script.Parent
 	local menu = script.Parent.Parent.menu
 	local ts = game:GetService("TweenService")
@@ -1662,10 +1677,10 @@ local script = G2L["8a"];
 		ts:Create(button, TweenInfo.new(0.2), {Size = buttonsize}):Play()
 	end)
 end;
-task.spawn(C_8a);
+task.spawn(C_8b);
 -- StarterGui.onrusha.menubutton.LocalScript
-local function C_8b()
-local script = G2L["8b"];
+local function C_8c()
+local script = G2L["8c"];
 	local frame = script.Parent
 	local UIS = game:GetService("UserInputService")
 	local dragging = false
@@ -1693,10 +1708,10 @@ local script = G2L["8b"];
 		end
 	end)
 end;
-task.spawn(C_8b);
+task.spawn(C_8c);
 -- StarterGui.onrusha.LocalScript
-local function C_8f()
-local script = G2L["8f"];
+local function C_90()
+local script = G2L["90"];
 	local gui = script.Parent
 	local function getRandomString(length)
 		local chars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
@@ -1713,10 +1728,10 @@ local script = G2L["8f"];
 	code.Visible = true
 	script.Parent.lock.Visible = true
 end;
-task.spawn(C_8f);
+task.spawn(C_90);
 -- StarterGui.onrusha.code.ds.LocalScript
-local function C_a0()
-local script = G2L["a0"];
+local function C_a1()
+local script = G2L["a1"];
 	local tb = script.Parent
 	tb.FocusLost:Connect(function()
 		tb.Text = "https://discord.gg/NWyfNUzTF"
@@ -1725,10 +1740,10 @@ local script = G2L["a0"];
 		tb.Text = "https://discord.gg/NWyfNUzTF"
 	end)
 end;
-task.spawn(C_a0);
+task.spawn(C_a1);
 -- StarterGui.onrusha.code.LocalScript
-local function C_a1()
-local script = G2L["a1"];
+local function C_a2()
+local script = G2L["a2"];
 	local tb = script.Parent.TextBox
 	local menu = script.Parent.Parent.menu
 	tb.FocusLost:Connect(function()
@@ -1742,6 +1757,6 @@ local script = G2L["a1"];
 		end
 	end)
 end;
-task.spawn(C_a1);
+task.spawn(C_a2);
 
 return G2L["1"], require;
